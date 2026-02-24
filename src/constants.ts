@@ -1,0 +1,133 @@
+import { Globe, Video, Search, GraduationCap } from 'lucide-react';
+import { Service, Testimonial, BlogPost } from './types';
+
+export const SERVICES: Service[] = [
+  {
+    id: 'web-design',
+    title: 'Diseño Web Profesional',
+    description: 'Sitios rápidos, optimizados para SEO y listos para monetizar con AdSense.',
+    icon: Globe,
+    color: 'blue',
+  },
+  {
+    id: 'youtube-coaching',
+    title: 'Asesoría YouTube & Blogs',
+    description: 'Estrategias probadas para crecer tu audiencia y generar ingresos pasivos.',
+    icon: Video,
+    color: 'red',
+  },
+  {
+    id: 'seo-audit',
+    title: 'Auditoría SEO',
+    description: 'Análisis completo para mejorar tu ranking en Google y aumentar tráfico.',
+    icon: Search,
+    color: 'emerald',
+  },
+  {
+    id: 'mentorship',
+    title: 'Mentoría 1 a 1',
+    description: 'Acompañamiento personalizado para lanzar tu proyecto digital.',
+    icon: GraduationCap,
+    color: 'orange',
+  },
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: '1',
+    author: 'Juan Pérez',
+    role: 'Diseño Web',
+    content: 'Gracias al curso de diseño web, dejé mi trabajo y ahora tengo mi propia agencia. El soporte de la comunidad es ¡increíble!',
+    rating: 5,
+    date: 'Hace 2 días',
+    category: 'Diseño Web',
+    avatar: 'https://picsum.photos/seed/juan/100/100',
+    likes: 12,
+    status: 'approved',
+  },
+  {
+    id: '2',
+    author: 'Maria G.',
+    role: 'YouTube',
+    content: '¡Mi canal de YouTube finalmente monetizó gracias a los consejos de Blogdoucode! Jamás pensé que el SEO para video fuera tan importante.',
+    rating: 5,
+    date: 'Hace 1 semana',
+    category: 'YouTube',
+    avatar: 'https://picsum.photos/seed/maria/100/100',
+    likes: 8,
+    status: 'approved',
+  },
+  {
+    id: '3',
+    author: 'Carlos R.',
+    role: 'Blogging',
+    content: 'Los tips de SEO para mi blog fueron increíbles. Mis visitas se triplicaron en un mes. Solo me gustaría que hubiera más contenido sobre marketing de afiliados.',
+    rating: 4.5,
+    date: 'Hace 2 semanas',
+    category: 'Blogs',
+    avatar: 'https://picsum.photos/seed/carlos/100/100',
+    likes: 24,
+    status: 'pending',
+  },
+  {
+    id: '4',
+    author: 'Elena M.',
+    role: 'Freelance',
+    content: 'Convertirme en freelancer parecía imposible hasta que encontré esta plataforma. ¡Recomendadísimo!',
+    rating: 5,
+    date: 'Hace 3 semanas',
+    category: 'Freelance',
+    avatar: 'https://picsum.photos/seed/elena/100/100',
+    likes: 45,
+    status: 'approved',
+  },
+  {
+    id: '5',
+    author: 'Roberto Gomez',
+    role: 'Mentoria 1:1',
+    content: 'Grabé este video para agradecer personalmente...',
+    rating: 5,
+    date: 'Hace 1 día',
+    category: 'Mentoria',
+    avatar: 'https://picsum.photos/seed/roberto/100/100',
+    likes: 0,
+    status: 'pending',
+    isVideo: true,
+  }
+];
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    id: '1',
+    title: '7 Estrategias para Monetizar tu Blog en 2024',
+    excerpt: 'Descubre cómo transformar tu pasión por escribir y el diseño web en una fuente de ingresos sostenible.',
+    category: 'Monetización',
+    date: '12 Oct, 2023',
+    readTime: '5 min lectura',
+    image: 'https://picsum.photos/seed/blog1/800/400',
+    author: 'Carlos Dev',
+    authorAvatar: 'https://picsum.photos/seed/author/100/100',
+  },
+  {
+    id: '2',
+    title: '5 nichos rentables para empezar en 2024',
+    excerpt: 'Guía paso a paso para elegir tu nicho, configurar WordPress y escribir tu primer post...',
+    category: 'Monetización',
+    date: 'Hace 5 min',
+    readTime: '8 min lectura',
+    image: 'https://picsum.photos/seed/blog2/800/400',
+    author: 'Douglas González',
+    authorAvatar: 'https://picsum.photos/seed/douglas/100/100',
+  },
+  {
+    id: '3',
+    title: 'Guía básica para aprobar Adsense rápido',
+    excerpt: 'Lectura de 6 min sobre cómo optimizar tu sitio para la aprobación de Google Adsense.',
+    category: 'Adsense',
+    date: 'Ayer',
+    readTime: '6 min lectura',
+    image: 'https://picsum.photos/seed/blog3/800/400',
+    author: 'Douglas González',
+    authorAvatar: 'https://picsum.photos/seed/douglas/100/100',
+  }
+];
